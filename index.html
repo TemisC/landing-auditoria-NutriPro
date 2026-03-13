@@ -1,165 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auditoría de Eficiencia NutriPro</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <div class="hero__content">
-        <p class="hero__eyebrow">Auditoría express · 2 minutos</p>
-        <h1>
-          Recupera tu vida profesional con una auditoría de eficiencia hecha para
-          nutricionistas visionarios.
-        </h1>
-        <p class="hero__description">
-          Detecta en minutos dónde se filtra tu tiempo, cuantifica el potencial de
-          automatizar tus tareas administrativas y descubre si calificas como uno de
-          los 5 Fundadores Pioneros de NutriPro.
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseña tu App Ideal | NutriPro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Ayúdanos a escucharte · 2 minutos</p>
+      <h1>
+        Cuéntanos qué te frustra hoy y diseñemos juntos la app ideal para nutricionistas.
+      </h1>
+      <p class="hero__description">
+        Queremos entender dónde pierdes más tiempo en tareas administrativas. Tu experiencia nos guiará para construir
+        la herramienta perfecta que te devuelva horas de vida y mejore tu consulta.
+      </p>
+      <div class="hero__cta">
+        <button id="cta-button" class="primary-btn">
+          Comenzar Encuesta (2 min)
+        </button>
+        <span class="cta__support">Tu opinión nos ayuda a crear una app ideal para ti</span>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+        alt="Nutricionista sonriente usando una tablet" />
+      <div class="hero__badge">
+        <p>+15 hrs ahorradas al mes</p>
+        <span>NutriPro Insights 2025</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="encuesta" class="survey">
+      <div class="survey__header">
+        <h2>
+          Diseñemos juntos tu App ideal
+        </h2>
+        <p>
+          13 preguntas, una a la vez. Cuéntanos qué te frustra hoy para construir la herramienta que realmente necesitas
+          como profesional. Comienza cuando estés listo.
         </p>
-        <div class="hero__cta">
-          <button id="cta-button" class="primary-btn">
-            Empezar Auditoría de Eficiencia (2 min)
+      </div>
+
+      <form id="efficiency-form" class="survey__card">
+        <div class="survey__progress">
+          <div class="progress__track"></div>
+          <div class="progress__bar" id="progress-bar"></div>
+          <div class="progress__step" id="progress-step">1 / 13</div>
+        </div>
+
+        <div class="survey__question">
+          <p class="question__label" id="question-label"></p>
+          <p class="question__hint" id="question-hint"></p>
+          <div class="question__input" id="input-wrapper"></div>
+        </div>
+
+        <div class="survey__actions">
+          <button type="button" id="prev-btn" class="ghost-btn" disabled>
+            Anterior
           </button>
-          <span class="cta__support">Tu opinión nos ayuda a crear una app ideal para ti</span>
+          <button type="button" id="next-btn" class="primary-btn">
+            Siguiente
+          </button>
         </div>
+        <p class="survey__disclaimer">
+          Tus respuestas son confidenciales y solo se utilizarán para tu reporte
+          personalizado.
+        </p>
+      </form>
+
+      <div class="survey__success" id="survey-success" hidden>
+        <h3>¡Listo! Respuestas recibidas.</h3>
+        <p>
+          Gracias por compartir tu experiencia. Tu opinión es fundamental para nosotros. Te contactaremos pronto con las
+          novedades y tu invitación exclusiva a la cohorte Fundadores Pioneros.
+        </p>
       </div>
-      <div class="hero__media">
-        <img
-          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
-          alt="Nutricionista sonriente usando una tablet"
-        />
-        <div class="hero__badge">
-          <p>+15 hrs ahorradas al mes</p>
-          <span>NutriPro Insights 2025</span>
+    </section>
+
+    <section class="benefits">
+      <div class="benefits__card">
+        <div class="benefits__icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+            <path d="M4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
         </div>
+        <h3>Recupera tu vida</h3>
+        <p>Menos tiempo frente a Excel, más tiempo para ti y tus pacientes clave.</p>
       </div>
-    </header>
 
-    <main>
-      <section id="encuesta" class="survey">
-        <div class="survey__header">
-          <p class="survey__eyebrow">El núcleo</p>
-          <h2>
-            Auditoría de Eficiencia NutriPro
-          </h2>
-          <p>
-            12 preguntas, una a la vez. Progreso guiado y preguntas inteligentes para
-            entender dónde tu tiempo genera (o pierde) impacto. Comienza cuando estés
-            listo.
-          </p>
+      <div class="benefits__card">
+        <div class="benefits__icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            <path d="M9 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M12 16V4" stroke="currentColor" stroke-width="2" />
+          </svg>
         </div>
+        <h3>Seguimiento Inteligente</h3>
+        <p>IA que analiza progresos por ti y resalta alertas en segundos.</p>
+      </div>
 
-        <form id="efficiency-form" class="survey__card">
-          <div class="survey__progress">
-            <div class="progress__track"></div>
-            <div class="progress__bar" id="progress-bar"></div>
-            <div class="progress__step" id="progress-step">1 / 12</div>
-          </div>
-
-          <div class="survey__question">
-            <p class="question__label" id="question-label"></p>
-            <p class="question__hint" id="question-hint"></p>
-            <div class="question__input" id="input-wrapper"></div>
-          </div>
-
-          <div class="survey__actions">
-            <button type="button" id="prev-btn" class="ghost-btn" disabled>
-              Anterior
-            </button>
-            <button type="button" id="next-btn" class="primary-btn">
-              Siguiente
-            </button>
-          </div>
-          <p class="survey__disclaimer">
-            Tus respuestas son confidenciales y solo se utilizarán para tu reporte
-            personalizado.
-          </p>
-        </form>
-
-        <div class="survey__success" id="survey-success" hidden>
-          <h3>¡Listo! Auditoría recibida.</h3>
-          <p>
-            Te enviaremos tu diagnóstico personalizado y la invitación exclusiva a la
-            cohorte Fundadores Pioneros en las próximas horas.
-          </p>
+      <div class="benefits__card">
+        <div class="benefits__icon" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l3 7h7l-5.5 4.2L18 21l-6-3.8L6 21l1.5-7.8L2 9h7z" stroke="currentColor" stroke-width="2"
+              stroke-linejoin="round" />
+          </svg>
         </div>
-      </section>
+        <h3>Estatus Premium</h3>
+        <p>Pacientes con una app propia bajo tu marca elevan tu posicionamiento.</p>
+      </div>
+    </section>
+  </main>
 
-      <section class="benefits">
-        <div class="benefits__card">
-          <div class="benefits__icon" aria-hidden="true">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M12 6v6l4 2"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <h3>Recupera tu vida</h3>
-          <p>Menos tiempo frente a Excel, más tiempo para ti y tus pacientes clave.</p>
-        </div>
+  <script src="script.js"></script>
+</body>
 
-        <div class="benefits__card">
-          <div class="benefits__icon" aria-hidden="true">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M4 4h16v12H4z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M9 20h6"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-              <path
-                d="M12 16V4"
-                stroke="currentColor"
-                stroke-width="2"
-              />
-            </svg>
-          </div>
-          <h3>Seguimiento Inteligente</h3>
-          <p>IA que analiza progresos por ti y resalta alertas en segundos.</p>
-        </div>
-
-        <div class="benefits__card">
-          <div class="benefits__icon" aria-hidden="true">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 2l3 7h7l-5.5 4.2L18 21l-6-3.8L6 21l1.5-7.8L2 9h7z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <h3>Estatus Premium</h3>
-          <p>Pacientes con una app propia bajo tu marca elevan tu posicionamiento.</p>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
 </html>

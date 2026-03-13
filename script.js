@@ -157,7 +157,7 @@ const renderStep = () => {
 
   prevBtn.disabled = currentStep === 0;
   nextBtn.textContent =
-    currentStep === questions.length - 1 ? 'Enviar Auditoría' : 'Siguiente';
+    currentStep === questions.length - 1 ? 'Enviar Respuestas' : 'Siguiente';
 };
 
 const createInput = (question, storedValue) => {
@@ -370,7 +370,7 @@ const finalizeSurvey = async () => {
   } catch (error) {
     console.error('Error enviando a n8n:', error);
     alert('Hubo un problema enviando tus respuestas. Por favor, inténtalo de nuevo.');
-    nextBtn.textContent = 'Enviar Auditoría';
+    nextBtn.textContent = 'Enviar Respuestas';
     nextBtn.disabled = false;
   }
 };
