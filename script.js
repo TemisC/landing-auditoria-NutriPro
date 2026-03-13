@@ -13,7 +13,7 @@ const ctaButton = document.getElementById('cta-button');
 const questions = [
   {
     id: 'personal_hours',
-    text: '¿Cuántas horas de tu tiempo personal dedicas a redactar planes o notas?',
+    text: '¿Cuántas horas de tu tiempo personal dedicas a redactar planes de nutrición o notas a tus pacientes?',
     hint: 'Incluye noches y fines de semana fuera de consulta.',
     type: 'number',
     placeholder: 'Ej. 4 horas',
