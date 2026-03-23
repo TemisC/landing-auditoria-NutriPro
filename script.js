@@ -12,6 +12,13 @@ const ctaButton = document.getElementById('cta-button');
 
 const questions = [
   {
+    id: 'data_status',
+    text: 'Hoy en día, ¿cómo conviven tus datos? ¿Utilizas un software especializado que centraliza todo, o tu información está repartida entre cuadernos, excels, chats de WhatsApp y carpetas? O alguna situacion similar, cuentanos.',
+    hint: 'Caja de texto amplia para detallar tu situación actual.',
+    type: 'textarea',
+    placeholder: 'Ej. Uso Excel para planes, WhatsApp para dudas y una carpeta física para fichas...',
+  },
+  {
     id: 'personal_hours',
     text: '¿Cuántas horas de tu tiempo personal dedicas a redactar planes de nutrición o notas a tus pacientes?',
     hint: 'Incluye noches y fines de semana fuera de consulta.',
